@@ -20,7 +20,7 @@ a:active {
   color: inherit !important;
 }
 
-/* Navbar Syling Starts Here */
+/* Navbar Styling Starts Here */
 .navbar {
   height: 7vh;
   align-items: center;
@@ -45,12 +45,47 @@ a:active {
   border-radius: 5px;
 }
 
-/* Navbar Syling Ends Here */
+/* Navbar Styling Ends Here */
 
-/* App Syling Starts Here */
+/* App Styling Starts Here */
 
 .App {
   padding-top: 7vh;
 }
 
-/* App Syling Ends Here */
+/* App Styling Ends Here */
+
+/* Menu Notes Styling Starts Here */
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 90vw;
+  margin: 16px;
+  float: left;
+}
+
+.note img {
+  width: 80vw;
+  height: auto;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.foodCartFunction .btn img {
+  width: 40px;
+}
+
+/* Menu Notes Styling Ends Here */
