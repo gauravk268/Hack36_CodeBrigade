@@ -1,13 +1,56 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* Navbar Syling Starts Here */
+.navbar {
+  height: 7vh;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.navbar,
+.navbar-right-child a {
+  color: white;
+  padding: 1vw;
+}
+
+.navbar-left-child {
+  float: left;
+}
+.navbar-right-child {
+  float: right;
+}
+
+.navbar-link:hover {
+  background-color: rgb(24, 143, 223);
+  border-radius: 5px;
+}
+
+/* Navbar Syling Ends Here */
+
+/* App Syling Starts Here */
+
+.App {
+  padding-top: 7vh;
+}
+
+/* App Syling Ends Here */
