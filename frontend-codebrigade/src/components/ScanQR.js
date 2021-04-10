@@ -5,7 +5,6 @@ import { MenuContext } from "../contexts";
 
 function ScanQR(props) {
   const [scanResultWebCam, setScanResultWebCam] = useState("");
-  const [tableNo, setTableNo] = useState();
   const history = useHistory();
   const value = useContext(MenuContext);
 
@@ -24,9 +23,10 @@ function ScanQR(props) {
   const handleScanWebCam = (result) => {
     if (result) {
       setScanResultWebCam(result);
-      const temp = result.match(/\d+/g);
-      setTableNo(temp);
+      const table = result.match(/\d+/g);
       value.setQrScanned(true);
+      value.setTableNo(table[0]);
+      console.log(value.tableNo);
       // sleep(10000);
       history.push("/menu");
     }
@@ -43,9 +43,9 @@ function ScanQR(props) {
           onScan={handleScanWebCam}
         />
         {/* <h3>Scanned By WebCam Code: {scanResultWebCam}</h3> */}
-        {tableNo && (
+        {value.tableNo && (
           <h4 className="alert alert-success text-center ">
-            Table No.: {tableNo}
+            Table No.: {value.tableNo}
           </h4>
         )}
       </div>

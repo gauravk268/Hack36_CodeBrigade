@@ -5,6 +5,7 @@ import CartCard from "./CartCard";
 function Cart(props) {
   const value = useContext(MenuContext);
   const cart = [...value.cart];
+  const table = value.tableNo;
 
   const ifCartEmpty = () => {
     return (
@@ -33,6 +34,7 @@ function Cart(props) {
 
   return (
     <div className="cart container">
+      <div className="alert alert-success text-center">Table No: {table}</div>
       <h4 className="text-center display-6">Cart</h4>
       {cart.map((food) => {
         return <CartCard food={food} />;

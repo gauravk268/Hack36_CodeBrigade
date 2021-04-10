@@ -7,15 +7,17 @@ function Pay(props) {
   const history = useHistory();
   // const setQrScanned = value.setQrScanned;
 
-  const handlePayment = () => {
+  const paymentSuccess = () => {
     value.setQrScanned(false);
+    value.setTableNo(0);
+    value.setCart([]);
     history.push("/feedback");
   };
 
   return (
     <div className="pay container">
       <div className="jumbotron text-center">
-        <button className="btn btn-primary" onClick={handlePayment}>
+        <button className="btn btn-primary" onClick={paymentSuccess}>
           Pay and Checkout
         </button>
       </div>
