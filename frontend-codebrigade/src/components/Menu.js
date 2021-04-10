@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import FoodCard from "./FoodCard";
 import { MenuContext } from "../contexts";
 
 function Menu(props) {
   const value = useContext(MenuContext);
-  const [menu, setMenu] = useState([...value.food]);
+  const menu = [...value.food];
   const cart = [...value.cart];
 
   let totalCost = 0;
@@ -18,13 +18,21 @@ function Menu(props) {
   orderValue();
 
   return (
-    <div>
+    <div className="menu justify-content-center">
       <h4 className="text-center display-6">Menu</h4>
       {menu.map((food) => {
         return <FoodCard food={food} key={food.id} />;
       })}
 
-      <h4 className="text-center h4">Order Value: Rs. {totalCost}</h4>
+      <h4 className="text-center alert-text h4">
+        Order Value: Rs. {totalCost}
+      </h4>
+
+      <div className="text-center">
+        <button className="order btn btn-primary me-2">
+          <a href="/cart">Confirm Order</a>
+        </button>
+      </div>
     </div>
   );
 }
