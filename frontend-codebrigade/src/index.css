@@ -116,9 +116,8 @@ a:active {
   width: 10rem;
 }
 
-.cart-page {
-  display: flex;
-  justify-content: space-around;
+.cart {
+  padding-bottom: 3rem;
 }
 
 .cart .cart-function {
