@@ -93,17 +93,17 @@ function FoodCard({ food }) {
         {`${qty ? "Remove" : "Add"}`}
       </button>
       <div className="foodCartFunction" style={styleDiv}>
-        <button className="btn" style={stylebtn} onClick={incFood}>
+        <button className="btn shadow-none" style={stylebtn} onClick={incFood}>
           <img src="/icons/icons8-add-50.png" alt="increase food qty" />
         </button>
         <button className="btn btn-disabled">
           <h4>{qty}</h4>
         </button>
-        <button className="btn" style={stylebtn} onClick={decFood}>
+        <button className="btn shadow-none" style={stylebtn} onClick={decFood}>
           <img src="/icons/icons8-minus-50.png" alt="decrease food qty" />
         </button>
 
-        <button className="btn" onClick={removeFood}>
+        <button className="btn shadow-none" onClick={removeFood}>
           <img src="/icons/icons8-cancel-50.png" alt="remove food qty" />
         </button>
       </div>

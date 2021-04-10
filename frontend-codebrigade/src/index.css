@@ -116,9 +116,17 @@ a:active {
   width: 10rem;
 }
 
-.cart-page {
+.cart {
+  padding-bottom: 3rem;
+}
+
+.cart .cart-function {
   display: flex;
   justify-content: space-around;
+}
+
+.cart .cart-function button {
+  line-height: 1.5rem;
 }
 
 /* Cart Styling Ends Here */
