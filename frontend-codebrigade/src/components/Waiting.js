@@ -1,9 +1,18 @@
 import React from "react";
-
+import games from "./Games"
+import Game from "./Game"
 function Waiting(props) {
   return (
     <div>
-      <h4 className="h4">Waiting</h4>
+     {games.map(Item => (
+        <Game
+          key={Item.key}
+          title={Item.title}
+          content={Item.content}
+          image={Item.image}
+          link={Item.link}
+        />
+      ))}
     </div>
   );
 }

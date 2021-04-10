@@ -6,6 +6,7 @@ import {
   Home,
   ScanQR,
   Menu,
+  Cart,
   Waiting,
   OrderAgain,
   Error404,
@@ -21,9 +22,10 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/scanqr" component={ScanQR} />
             <Route path="/menu" component={Menu} />
+            <Route path="/cart" component={Cart} />
             <Route path="/waiting" component={Waiting} />
             <Route path="/order-again" component={OrderAgain} />
-            <Route path="*" component={() => <Error404 />} />
+            <Route path="*" component={Error404} />
           </Switch>
         </Router>
       </MenuProvider>
