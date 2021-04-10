@@ -6,6 +6,7 @@ export const MenuContext = createContext();
 export const MenuProvider = (props) => {
   const [food, setFood] = useState([...notes]);
   const [cart, setCart] = useState([]);
+  const [qrScan, setQrScanned] = useState();
 
   useEffect(() => {
     const getLocalCart = () => {
@@ -28,11 +29,34 @@ export const MenuProvider = (props) => {
     saveLocalCart();
   }, [cart]);
 
+  useEffect(() => {
+    const getLocalQR = () => {
+      if (localStorage.getItem("qrScanned") === null) {
+        localStorage.setItem("qrScanned", false);
+      } else {
+        let qrValueLocal = localStorage.getItem("qrScanned");
+        setQrScanned(qrValueLocal);
+      }
+    };
+
+    getLocalQR();
+  }, []);
+
+  useEffect(() => {
+    const saveLocalQR = () => {
+      localStorage.setItem("qrScanned", qrScan);
+    };
+
+    saveLocalQR();
+  }, [qrScan]);
+
   const value = {
     food,
     setFood,
     cart,
     setCart,
+    qrScan,
+    setQrScanned,
   };
 
   return (
