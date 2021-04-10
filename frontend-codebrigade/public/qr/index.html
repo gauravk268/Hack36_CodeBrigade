@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #preview {
+        width: 300px;
+        height: 300px;
+        outline: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="preview"></video>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        let scanner = new Instascan.Scanner({
+          video: document.getElementById("preview"),
+        });
+
+        Instascan.Camera.getCameras()
+          .then((cameras) => {
+            scanner.camera = cameras[cameras.length - 1];
+            scanner.start();
+          })
+          .catch((e) => console.error(e));
+
+        scanner.addListener("scan", (content) => {
+          console.log(content);
+          var url_string = String(content); //window.location.href
+          var url = new URL(url_string);
+          var c = url.searchParams.get("table");
+
+          console.log(c);
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instascan/2.0.0-rc.4/instascan.min.js"></script>
+    <script src="./js.js"></script>
+  </body>
+</html>
