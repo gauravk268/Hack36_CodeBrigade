@@ -12,14 +12,6 @@ function ScanQR(props) {
     console.log(error);
   };
 
-  function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
-
   const handleScanWebCam = (result) => {
     if (result) {
       setScanResultWebCam(result);
