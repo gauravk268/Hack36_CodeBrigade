@@ -4,6 +4,7 @@ import Game from "./Game";
 function Waiting(props) {
   return (
     <div>
+    <h4>Try out these fabulous Games ,Till Your Came</h4>
       {games.map((Item) => (
         <Game
           key={Item.key}
