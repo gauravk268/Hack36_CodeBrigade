@@ -12,7 +12,7 @@ const OurTeam = ({ teamMember }) => {
         <h5>{teamMember.year}</h5>
 
         <a href={teamMember.facebook} style={styleIcon}>
-          <img src="/icons/icons8-facebook-50.png" alt="..." />
+          <img src="/icons/icons8-facebook-50.png" alt=" " />
         </a>
 
         <a href={teamMember.github} style={styleIcon}>

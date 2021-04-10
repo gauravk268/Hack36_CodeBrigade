@@ -6,6 +6,8 @@ export const MenuContext = createContext();
 export const MenuProvider = (props) => {
   const [food, setFood] = useState([...notes]);
   const [cart, setCart] = useState([]);
+  const [qrScan, setQrScanned] = useState();
+  const [tableNo, setTableNo] = useState();
 
   useEffect(() => {
     const getLocalCart = () => {
@@ -28,11 +30,57 @@ export const MenuProvider = (props) => {
     saveLocalCart();
   }, [cart]);
 
+  useEffect(() => {
+    const getLocalQR = () => {
+      if (localStorage.getItem("qrScanned") === null) {
+        localStorage.setItem("qrScanned", false);
+      } else {
+        let qrValueLocal = localStorage.getItem("qrScanned");
+        setQrScanned(qrValueLocal);
+      }
+    };
+
+    getLocalQR();
+  }, []);
+
+  useEffect(() => {
+    const saveLocalQR = () => {
+      localStorage.setItem("qrScanned", qrScan);
+    };
+
+    saveLocalQR();
+  }, [qrScan]);
+
+  useEffect(() => {
+    const getLocalQR = () => {
+      if (localStorage.getItem("tableNoLocal") === null) {
+        localStorage.setItem("tableNoLocal", 0);
+      } else {
+        let tableValueLocal = localStorage.getItem("tableNoLocal");
+        setTableNo(tableValueLocal);
+      }
+    };
+
+    getLocalQR();
+  }, []);
+
+  useEffect(() => {
+    const saveLocalTableNo = () => {
+      localStorage.setItem("tableNoLocal", tableNo);
+    };
+
+    saveLocalTableNo();
+  }, [tableNo]);
+
   const value = {
     food,
     setFood,
     cart,
     setCart,
+    qrScan,
+    setQrScanned,
+    tableNo,
+    setTableNo,
   };
 
   return (

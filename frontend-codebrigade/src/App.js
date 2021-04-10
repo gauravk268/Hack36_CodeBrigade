@@ -11,6 +11,8 @@ import {
   OrderAgain,
   Pay,
   Feedback,
+  FeedbackSuccess,
+  PrivateRoute,
   Error404,
   Footer,
 } from "./components";
@@ -18,23 +20,40 @@ import {
 function App() {
   return (
     <div className="App">
-        <Navbar />
+      <Navbar />
       <MenuProvider>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/scanqr" component={ScanQR} />
-            <Route path="/menu" component={Menu} />
-            <Route path="/cart" component={Cart} />
-            <Route path="/waiting" component={Waiting} />
-            <Route path="/order-again" component={OrderAgain} />
-            <Route path="/pay" component={Pay} />
-            <Route path="/feedback" component={Feedback} />
+
+            {/* <Route path="/menu" component={Menu} /> */}
+            <PrivateRoute path="/menu" component={Menu} />
+
+            {/* <Route path="/cart" component={Cart} /> */}
+            <PrivateRoute path="/cart" component={Cart} />
+
+            {/* <Route path="/waiting" component={Waiting} /> */}
+            <PrivateRoute path="/waiting" component={Waiting} />
+
+            {/* <Route path="/order-again" component={OrderAgain} /> */}
+            <PrivateRoute path="/order-again" component={OrderAgain} />
+
+            {/* <Route path="/pay" component={Pay} /> */}
+            <PrivateRoute path="/pay" component={Pay} />
+
+            {/* <Route path="/feedback" component={Feedback} /> */}
+            <PrivateRoute path="/feedback" component={Feedback} />
+            <PrivateRoute
+              path="/feedback-success"
+              component={FeedbackSuccess}
+            />
+
             <Route path="*" component={Error404} />
           </Switch>
         </Router>
       </MenuProvider>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

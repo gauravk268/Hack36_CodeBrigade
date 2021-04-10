@@ -6,6 +6,7 @@ function Menu(props) {
   const value = useContext(MenuContext);
   const menu = [...value.food];
   const cart = [...value.cart];
+  const table = value.tableNo;
 
   let totalCost = 0;
   const orderValue = () => {
@@ -19,6 +20,7 @@ function Menu(props) {
 
   return (
     <div className="menu justify-content-center">
+      <div className="alert alert-success text-center">Table No: {table}</div>
       <h4 className="text-center display-6">Menu</h4>
       {menu.map((food) => {
         return <FoodCard food={food} key={food.id} />;

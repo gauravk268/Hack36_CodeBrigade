@@ -8,6 +8,8 @@ import Waiting from "./Waiting";
 import OrderAgain from "./OrderAgain";
 import Pay from "./Pay";
 import Feedback from "./Feedback";
+import FeedbackSuccess from "./FeedbackSuccess";
+import PrivateRoute from "./PrivateRoute";
 import Error404 from "./Error404";
 import Footer from "./Footer";
 
@@ -22,7 +24,8 @@ export {
   OrderAgain,
   Pay,
   Feedback,
+  FeedbackSuccess,
+  PrivateRoute,
   Error404,
   Footer,
 };
-

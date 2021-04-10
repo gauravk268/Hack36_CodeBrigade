@@ -6,7 +6,7 @@ function Feedback(props) {
       <div className="card jumbotron">
         <div className="card-body">
           <h2 className="text-center mb-4">Feedback</h2>
-          <form action="/submit-feedback">
+          <form action="/feedback-success">
             <div className="form-group" id="feedbackFood">
               <p className="form-label">How was your food?</p>
               <select id="foodQual">
@@ -47,6 +47,20 @@ function Feedback(props) {
                 <option value="2">2 - Bad </option>
                 <option value="1">1 - Terrible </option>
               </select>
+            </div>
+
+            <div className="form-group" id="email">
+              <p className="form-label">Email</p>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="email"
+              />
+              <small id="emailHelp" class="form-text text-muted">
+                For contact tracing purposes (voluntary)
+              </small>
             </div>
 
             <button className="btn btn-primary" type="submit">
