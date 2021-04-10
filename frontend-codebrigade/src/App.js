@@ -9,6 +9,8 @@ import {
   Cart,
   Waiting,
   OrderAgain,
+  Pay,
+  Feedback,
   Error404,
 } from "./components";
 
@@ -25,6 +27,8 @@ function App() {
             <Route path="/cart" component={Cart} />
             <Route path="/waiting" component={Waiting} />
             <Route path="/order-again" component={OrderAgain} />
+            <Route path="/pay" component={Pay} />
+            <Route path="/feedback" component={Feedback} />
             <Route path="*" component={Error404} />
           </Switch>
         </Router>
