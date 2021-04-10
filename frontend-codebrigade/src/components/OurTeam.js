@@ -2,7 +2,7 @@ import React from "react";
 
 const OurTeam = ({ teamMember }) => {
   return (
-    <div className=".col-xs-7 .col-sm-6 .col-lg-8 jumbotron ">
+    <div className=".col-xs-7 .col-sm-6 .col-lg-8 jumbotron text-center">
       <img style={styleImg} src={teamMember.image} />
       <div className="our-team-member our-team-detail text-center">
         <h4>
@@ -28,8 +28,8 @@ const OurTeam = ({ teamMember }) => {
 };
 
 const styleImg = {
-  width: "70vw",
-  height: "auto",
+  width: "200px",
+  height: "274px",
   border: "2px solid rgba(0, 0, 0, 0.5)",
   borderRadius: "50%",
 };
