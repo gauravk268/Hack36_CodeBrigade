@@ -58,9 +58,11 @@ const CartCard = ({ food }) => {
         <button className="btn" style={stylebtn} onClick={incFood}>
           <img src="/icons/icons8-add-50.png" alt="increase food qty" />
         </button>
+
         <button className="btn btn-disabled">
           <h4>{food.qty}</h4>
         </button>
+
         <button className="btn" style={stylebtn} onClick={decFood}>
           <img src="/icons/icons8-minus-50.png" alt="decrease food qty" />
         </button>

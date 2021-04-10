@@ -121,4 +121,13 @@ a:active {
   justify-content: space-around;
 }
 
+.cart .cart-function {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart .cart-function button {
+  line-height: 1.5rem;
+}
+
 /* Cart Styling Ends Here */
