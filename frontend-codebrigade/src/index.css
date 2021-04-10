@@ -57,6 +57,16 @@ a:active {
 
 /* Menu Notes Styling Starts Here */
 
+.menu {
+  padding-bottom: 10vh;
+  justify-content: center;
+}
+
+.menu button.order {
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
 .note {
   background: #fff;
   border-radius: 7px;
@@ -89,3 +99,26 @@ a:active {
 }
 
 /* Menu Notes Styling Ends Here */
+
+/* Cart Styling Starts Here */
+
+.cart-card h5 span {
+  float: right;
+}
+
+.no-product-in-cart .icon {
+  color: red;
+  border: 5px solid red;
+  font-size: 8rem;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 10rem;
+}
+
+.cart-page {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Cart Styling Ends Here */
