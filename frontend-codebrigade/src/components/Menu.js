@@ -5,14 +5,17 @@ import { MenuContext } from "../contexts";
 function Menu(props) {
   const value = useContext(MenuContext);
   const [menu, setMenu] = useState([...value.food]);
+  const cart = [...value.cart];
 
-  // const orderValue = () => {
-  //   let cost = 0;
-  //   menu.map((food) => {
-  //     cost += food.qty + food.price;
-  //   });
-  //   return cost;
-  // };
+  let totalCost = 0;
+  const orderValue = () => {
+    cart.forEach((food) => {
+      totalCost += food.qty * food.price;
+    });
+    totalCost = Math.round(totalCost).toFixed(2);
+  };
+
+  orderValue();
 
   return (
     <div>
@@ -21,7 +24,7 @@ function Menu(props) {
         return <FoodCard food={food} key={food.id} />;
       })}
 
-      {/* <h4 className="text-center h4">Order Value: Rs. {orderValue()}</h4> */}
+      <h4 className="text-center h4">Order Value: Rs. {totalCost}</h4>
     </div>
   );
 }

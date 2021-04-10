@@ -5,34 +5,43 @@ function FoodCard({ food }) {
   const value = useContext(MenuContext);
   const cart = value.cart;
   const setCart = value.setCart;
-  const [qty, setQty] = useState(food.qty);
+  const [qty, setQty] = useState(0);
+
+  const updateQty = (newQty) => {
+    setCart(
+      cart.map((cartFood) => {
+        if (cartFood.id === food.id) {
+          return { ...food, qty: newQty };
+        }
+        return cartFood;
+      })
+    );
+  };
+
+  const addFood = () => {
+    setQty(1);
+    updateQty(1);
+    setCart([...cart, { ...food, qty: 1 }]);
+  };
 
   const incFood = () => {
-    if (qty === 0) {
-      setQty(1);
-      food.qty = qty;
-      setCart([...cart, food]);
-    } else {
-      setQty(qty + 1);
-      food.qty = qty;
-    }
+    const k = qty;
+    setQty(k + 1);
+    updateQty(k + 1);
   };
 
   const decFood = () => {
-    if (qty < 1) {
-      return;
-    }
     if (qty === 1) {
       removeFood();
     } else {
       setQty(qty - 1);
-      food.qty = qty;
+      updateQty(qty);
     }
   };
 
   const removeFood = () => {
     setQty(0);
-    food.qty = qty;
+    updateQty(0);
     setCart(cart.filter((cartFood) => cartFood.id !== food.id));
   };
 
@@ -54,24 +63,24 @@ function FoodCard({ food }) {
       <p>{food.rating} &#127775;</p>
 
       <button
-        className={`${qty > 0 ? "btn btn-danger" : "btn btn-primary"}`}
-        onClick={qty > 0 ? decFood : incFood}
+        className={`${qty ? "btn btn-danger" : "btn btn-primary"}`}
+        onClick={qty ? decFood : addFood}
       >
-        {`${qty > 0 ? "Remove" : "Add"}`}
+        {`${qty ? "Remove" : "Add"}`}
       </button>
       <div className="foodCartFunction" style={styleDiv}>
         <button className="btn" style={stylebtn} onClick={incFood}>
-          <img src="/icons/icons8-plus-100.png" alt="increase food qty" />
+          <img src="/icons/icons8-add-50.png" alt="increase food qty" />
         </button>
         <button className="btn btn-disabled">
           <h4>{qty}</h4>
         </button>
         <button className="btn" style={stylebtn} onClick={decFood}>
-          <img src="/icons/icons8-minus-100.png" alt="decrease food qty" />
+          <img src="/icons/icons8-minus-50.png" alt="decrease food qty" />
         </button>
 
         <button className="btn" onClick={removeFood}>
-          <img src="/icons/icons8-remove-100.png" alt="remove food qty" />
+          <img src="/icons/icons8-cancel-50.png" alt="remove food qty" />
         </button>
       </div>
     </div>
