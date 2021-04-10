@@ -1,18 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import FoodCard from "./FoodCard";
 import { MenuContext } from "../contexts";
 
 function OrderAgain(props) {
   const value = useContext(MenuContext);
-  const [menu, setMenu] = useState([...value.food]);
-
-  // const orderValue = () => {
-  //   let cost = 0;
-  //   menu.map((food) => {
-  //     cost += food.qty + food.price;
-  //   });
-  //   return cost;
-  // };
+  const menu = [...value.food];
 
   return (
     <div>
@@ -20,18 +12,8 @@ function OrderAgain(props) {
       {menu.map((food) => {
         return <FoodCard food={food} key={food.id} />;
       })}
-
-      {/* <h4 className="text-center h4">Order Value: Rs. {orderValue()}</h4> */}
     </div>
   );
 }
-
-// function OrderAgain(props) {
-//   return (
-//     <div>
-//       <h4 className="h4">Order Again</h4>
-//     </div>
-//   );
-// }
 
 export default OrderAgain;

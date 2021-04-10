@@ -1,10 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import QrReader from "react-qr-reader";
 import { MenuContext } from "../contexts";
 
 function ScanQR(props) {
-  const [scanResultWebCam, setScanResultWebCam] = useState("");
   const history = useHistory();
   const value = useContext(MenuContext);
 
@@ -14,7 +13,6 @@ function ScanQR(props) {
 
   const handleScanWebCam = (result) => {
     if (result) {
-      setScanResultWebCam(result);
       const table = result.match(/\d+/g);
       value.setQrScanned(true);
       value.setTableNo(table[0]);

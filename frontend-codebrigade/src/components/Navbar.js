@@ -29,7 +29,7 @@ const Navbar = (props) => {
                   </a>
                 </div>
               </ul>
-              <a className="menu-trigger">
+              <a href="#top" className="menu-trigger">
                 <span>Menu</span>
               </a>
             </nav>

@@ -44,10 +44,7 @@ function App() {
 
             {/* <Route path="/feedback" component={Feedback} /> */}
             <PrivateRoute path="/feedback" component={Feedback} />
-            <PrivateRoute
-              path="/feedback-success"
-              component={FeedbackSuccess}
-            />
+            <Route path="/feedback-success" component={FeedbackSuccess} />
 
             <Route path="*" component={Error404} />
           </Switch>
