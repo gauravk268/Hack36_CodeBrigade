@@ -10,6 +10,7 @@ import {
   Waiting,
   OrderAgain,
   Pay,
+  PaymentSuccess,
   Feedback,
   FeedbackSuccess,
   PrivateRoute,
@@ -33,17 +34,18 @@ function App() {
             {/* <Route path="/cart" component={Cart} /> */}
             <PrivateRoute path="/cart" component={Cart} />
 
-            {/* <Route path="/waiting" component={Waiting} /> */}
-            <PrivateRoute path="/waiting" component={Waiting} />
+            <Route path="/waiting" component={Waiting} />
+            {/* <PrivateRoute path="/waiting" component={Waiting} /> */}
 
             {/* <Route path="/order-again" component={OrderAgain} /> */}
             <PrivateRoute path="/order-again" component={OrderAgain} />
 
             {/* <Route path="/pay" component={Pay} /> */}
             <PrivateRoute path="/pay" component={Pay} />
+            <PrivateRoute path="/payment-success" component={PaymentSuccess} />
 
             {/* <Route path="/feedback" component={Feedback} /> */}
-            <PrivateRoute path="/feedback" component={Feedback} />
+            <Route path="/feedback" component={Feedback} />
             <Route path="/feedback-success" component={FeedbackSuccess} />
 
             <Route path="*" component={Error404} />

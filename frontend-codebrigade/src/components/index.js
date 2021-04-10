@@ -7,6 +7,7 @@ import CartCard from "./CartCard";
 import Waiting from "./Waiting";
 import OrderAgain from "./OrderAgain";
 import Pay from "./Pay";
+import PaymentSuccess from "./PaymentSuccess";
 import Feedback from "./Feedback";
 import FeedbackSuccess from "./FeedbackSuccess";
 import PrivateRoute from "./PrivateRoute";
@@ -23,6 +24,7 @@ export {
   Waiting,
   OrderAgain,
   Pay,
+  PaymentSuccess,
   Feedback,
   FeedbackSuccess,
   PrivateRoute,
