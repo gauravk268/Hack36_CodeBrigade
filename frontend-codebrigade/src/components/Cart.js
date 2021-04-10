@@ -22,10 +22,10 @@ function Cart(props) {
   const cartNotEmpty = () => {
     return (
       <div className="cart-function text-center">
-        <button className="menu btn btn-primary me-2">
+        <button className="btn btn-primary me-2">
           <a href="/menu">Menu</a>
         </button>
-        <button className="order btn btn-success">
+        <button className="btn btn-success">
           <a href="/waiting">Order</a>
         </button>
       </div>

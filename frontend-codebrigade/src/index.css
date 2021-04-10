@@ -96,6 +96,7 @@ a:active {
 
 .foodCartFunction .btn img {
   width: 40px;
+  height: auto;
 }
 
 /* Menu Notes Styling Ends Here */

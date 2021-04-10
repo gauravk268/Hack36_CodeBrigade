@@ -85,34 +85,10 @@ function Home(props) {
             <div className="col-lg-6 col-md-6 col-xs-12">
               <div className="right-text-content">
                 <p>
-                  <a
-                    rel="nofollow noopener"
-                    href="https://templatemo.com/tm-543-breezed"
-                    target="_parent"
-                  >
-                    Breezed HTML Template
-                  </a>{" "}
-                  is provided by TemplateMo for absolutely free of charge. You
-                  can download, edit and use this for your non-commercial and
-                  commercial websites.
-                  <br />
-                  <br />
-                  Redistributing this template as a downloadable ZIP file on any
-                  template collection website is strictly prohibited. You will
-                  need to talk to us if you want to redistribute this template.
-                  Thank you.
-                  <br />
-                  <br />
-                  This is a Bootstrap v4.3.1 CSS layout. Do you like it? You can
-                  feel free to{" "}
-                  <a
-                    rel="nofollow noopener"
-                    href="https://templatemo.com/contact"
-                    target="_parent"
-                  >
-                    talk to us
-                  </a>{" "}
-                  if you have anything.
+                  CONTACTLESS IS THE NEW COMFORT: HOW TOUCHLESS TECHNOLOGY KEEPS
+                  RESTAURANT BRANDS CONNECTED TO CUSTOMERS. SO THE PROBLEM IS
+                  THAT WE HAVE TO PROVIDE CONTACTLESS SERVICE SO THAT THE SAFETY
+                  OF THE CUSTOMERS AS WELL AS STAFF IS ENSURED.
                 </p>
               </div>
             </div>
