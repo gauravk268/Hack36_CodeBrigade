@@ -39,9 +39,12 @@ app.post('/users/login', (req, res) => {
     User.findByCredentials(body.email, body.password).then((user) => {
       return user.generateAuthToken().then((token) => {
         res.header('x-auth', token).send(user);
+        res.render('../frontend-codebrigade/public/src/components/Home', { user: req.user });
       });
     }).catch((e) => {
-      res.status(400).send();
+      alert('Login credentials are invaid!!');
+      res.redirect('../frontend-codebrigade/public/src/components/login');
+      // res.status(400).send();
     });
   });
 
