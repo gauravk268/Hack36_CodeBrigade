@@ -18,7 +18,7 @@ const games = [
     {
         key: 3,
         title: "Quick, Draw!",
-        link:"quickdraw.withgoogle.com",
+        link:"http://quickdraw.withgoogle.com",
         image : "https://quickdraw.withgoogle.com/static/shareimg.png",
         content:
           "Quick, Draw! is not only a game, but also a way of training a neural network. You are presented with a word and then get a short amount of time to doodle it. "
