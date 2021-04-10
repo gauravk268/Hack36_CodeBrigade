@@ -11,12 +11,67 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <title>CodeBrigade</title>
+    <title>CBS WEBSITE</title>
+
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/templatemo-breezed.css">
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/lightbox.css">
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="preloader">
+      <div class="jumper">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+  </div>  
+
     <div id="root"></div>
+     <!-- jQuery -->
+     <script src="%PUBLIC_URL%/assets/js/jquery-2.1.0.min.js"></script>
+
+     <!-- Bootstrap -->
+     <script src="%PUBLIC_URL%/assets/js/popper.js"></script>
+     <script src="%PUBLIC_URL%/assets/js/bootstrap.min.js"></script>
+ 
+     <!-- Plugins -->
+     <script src="%PUBLIC_URL%/assets/js/owl-carousel.js"></script>
+     <script src="%PUBLIC_URL%/assets/js/scrollreveal.min.js"></script>
+     <script src="%PUBLIC_URL%/assets/js/waypoints.min.js"></script>
+     <script src="%PUBLIC_URL%/assets/js/jquery.counterup.min.js"></script>
+     <script src="%PUBLIC_URL%/assets/js/imgfix.min.js"></script> 
+     <script src="%PUBLIC_URL%/assets/js/slick.js"></script> 
+     <script src="%PUBLIC_URL%/assets/js/lightbox.js"></script> 
+     <script src="%PUBLIC_URL%/assets/js/isotope.js"></script> 
+     
+     <!-- Global Init -->
+     <script src="%PUBLIC_URL%/assets/js/custom.js"></script>
+ 
+     <script>
+ 
+         $(function() {
+             var selectedClass = "";
+             $("p").click(function(){
+             selectedClass = $(this).attr("data-rel");
+             $("#portfolio").fadeTo(50, 0.1);
+                 $("#portfolio div").not("."+selectedClass).fadeOut();
+             setTimeout(function() {
+               $("."+selectedClass).fadeIn();
+               $("#portfolio").fadeTo(50, 1);
+             }, 500);
+                 
+             });
+         });
+ 
+     </script>
   </body>
 </html>

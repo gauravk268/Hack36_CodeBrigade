@@ -9,13 +9,14 @@ import {
   Waiting,
   OrderAgain,
   Error404,
+  Footer,
 } from "./components";
 
 function App() {
   return (
     <div className="App">
-      <MenuProvider>
         <Navbar />
+      <MenuProvider>
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -27,6 +28,7 @@ function App() {
           </Switch>
         </Router>
       </MenuProvider>
+      <Footer/>
     </div>
   );
 }

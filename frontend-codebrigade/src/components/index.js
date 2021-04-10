@@ -5,5 +5,6 @@ import Menu from "./Menu";
 import Waiting from "./Waiting";
 import OrderAgain from "./OrderAgain";
 import Error404 from "./Error404";
+import Footer from "./Footer";
 
-export { Navbar, Home, ScanQR, Menu, Waiting, OrderAgain, Error404 };
+export { Navbar, Home, ScanQR, Menu, Waiting, OrderAgain, Error404 ,Footer};

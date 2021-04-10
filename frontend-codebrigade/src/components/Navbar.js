@@ -1,20 +1,34 @@
 import React from "react";
 
+
 function Navbar(props) {
   return (
-    <nav className="navbar navbar-light navbar-light bg-danger fixed-top">
-      <div className="navbar-left-child h4">
-        <a href="/">CBG</a>
-      </div>
-      <div className="navbar-right-child">
-        <a className="navbar-link h5" href="/sign-up">
-          3.5 &#127775;
-        </a>
-        <a className="navbar-link h5" href="/login">
-          10 min
-        </a>
-      </div>
-    </nav>
+    <header className="header-area header-sticky">
+    <div className="container">
+        <div className="row">
+            <div className="col-12">
+                <nav className="main-nav">
+                
+                    <a href="index.html" className="logo">
+                        .CBS
+                    </a>
+             
+                    <ul className="nav">
+                        <li className="scroll-to-section"><a href="#top" className="active">Home</a></li>
+                        <li className="scroll-to-section"><a href="#about">About</a></li>
+                        <li className="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
+                        <div className="search-icon">
+                            <a href="#search"><i className="fa fa-search"></i></a>
+                        </div>
+                    </ul>        
+                    <a className='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
   );
 }
 
