@@ -5,7 +5,7 @@ const team = [
     last_name: "Kumar Singh",
     branch: "ECE",
     year: "3rd Year",
-    image: "/assets/images/mem-amit.jfif",
+    image: "/assets/images/mem-amit.jpeg",
     facebook:
       "https://www.facebook.com/people/Amit-Kumar-Singh/100004330866832/",
     github: "https://github.com/amitsinghmnnit",
