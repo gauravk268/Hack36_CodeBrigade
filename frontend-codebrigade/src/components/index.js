@@ -9,6 +9,7 @@ import OrderAgain from "./OrderAgain";
 import Pay from "./Pay";
 import Feedback from "./Feedback";
 import Error404 from "./Error404";
+import Footer from "./Footer";
 
 export {
   Navbar,
@@ -22,4 +23,6 @@ export {
   Pay,
   Feedback,
   Error404,
+  Footer,
 };
+
