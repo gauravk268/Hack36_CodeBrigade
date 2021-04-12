@@ -9,7 +9,7 @@ function Waiting(props) {
           <a href="/pay">Pay Bill</a>
         </button>
       </div>
-      <h4 className="px-2">Try out these fabulous Games ,Till Your Came</h4>
+      <h4 className="px-2">Try out these fabulous Games ,Till Your Order Came</h4>
       {games.map((Item) => (
         <Game
           key={Item.key}
