@@ -2,7 +2,7 @@ import React from "react";
 
 const OurTeam = ({ teamMember }) => {
   return (
-    <div className="jumbotron text-center">
+    <div className="jumbotron text-center m-5">
       <img style={styleImg} src={teamMember.image} alt="profile" />
       <div className="our-team-member our-team-detail text-center">
         <h4>
