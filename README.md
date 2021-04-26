@@ -11,6 +11,9 @@
 
 CONTACTLESS IS THE NEW COMFORT: HOW TOUCHLESS TECHNOLOGY KEEPS RESTAURANT BRANDS CONNECTED TO CUSTOMERS. SO THE PROBLEM IS THAT WE HAVE TO PROVIDE CONTACTLESS SERVICE SO THAT THE SAFETY OF THE CUSTOMERS AS WELL AS Of STAFF IS ENSURED.
 
+## Flow Chart of the Web-App
+
+<img src="https://raw.githubusercontent.com/gauravk268/Hack36_CodeBrigade/main/flowChart.png" alt="flow chart" />
 
 ## Table of Contents:
 
