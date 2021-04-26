@@ -24,9 +24,7 @@ const Navbar = (props) => {
                   <a href="#contact-us">Contact Us</a>
                 </li>
                 <div className="search-icon">
-                  <a href="#search">
-                    <i className="fa fa-search"></i>
-                  </a>
+                  <a href="#search">{/* <i className="fa fa-search"></i> */}</a>
                 </div>
               </ul>
               <a href="#top" className="menu-trigger">
