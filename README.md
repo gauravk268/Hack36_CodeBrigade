@@ -26,8 +26,8 @@ CONTACTLESS IS THE NEW COMFORT: HOW TOUCHLESS TECHNOLOGY KEEPS RESTAURANT BRANDS
 
 ## Site Demo
 
-<img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo1.png" width="300" alt="demo-1"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo2.png" width="300" alt="demo-2"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo3.png" width="300" alt="demo-3"> &nbsp;
-<img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo4.png" width="300" alt="demo-4"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo5.png" width="300" alt="demo-5"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo6.png" width="300" alt="demo-6"> &nbsp;
+<img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo1.png" width="280" alt="demo-1"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo2.png" width="280" alt="demo-2"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo3.png" width="280" alt="demo-3"> &nbsp;
+<img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo4.png" width="280" alt="demo-4"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo5.png" width="280" alt="demo-5"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo6.png" width="280" alt="demo-6"> &nbsp;
 
 ## Technology Stack:
 
