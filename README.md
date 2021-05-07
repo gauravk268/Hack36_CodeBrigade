@@ -24,6 +24,11 @@ CONTACTLESS IS THE NEW COMFORT: HOW TOUCHLESS TECHNOLOGY KEEPS RESTAURANT BRANDS
 5.MENU IS VISIBLE TO THE USER AFTER HE/SHE SCANS THE UNIQUE QR CODE ON HIS TABLE.<br>
 6.FOR THE PERIOD FOOD IS PREAPARING, ONE HAS OPTION TO CHECK ON NEWS OR PLAY GAMES ON HIS MOBILE PROVIDED IN THE WEB-APP.<br>
 
+## Site Demo
+
+<img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo1.png" width="300" alt="demo-1"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo2.png" width="300" alt="demo-2"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo3.png" width="300" alt="demo-3">
+<img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo4.png" width="300" alt="demo-4"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo5.png" width="300" alt="demo-5"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo6.png" width="300" alt="demo-6">
+
 ## Technology Stack:
 
    1.ReactJs<br>
