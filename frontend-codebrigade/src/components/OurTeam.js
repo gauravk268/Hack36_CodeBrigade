@@ -11,16 +11,16 @@ const OurTeam = ({ teamMember }) => {
         <h5>{teamMember.branch}</h5>
         <h5>{teamMember.year}</h5>
 
-        <a href={teamMember.facebook} style={styleIcon}>
-          <img src="/icons/icons8-facebook-50.png" alt="facebook" />
+        <a href={teamMember.facebook} >
+          <img src="/icons/icons8-facebook-50.png" alt="facebook" style={styleIcon}/>
         </a>
 
-        <a href={teamMember.github} style={styleIcon}>
-          <img src="/icons/icons8-github-50.png" alt="github" />
+        <a href={teamMember.github} >
+          <img src="/icons/icons8-github-50.png" alt="github" style={styleIcon}/>
         </a>
 
-        <a href={teamMember.linkedin} style={styleIcon}>
-          <img src="/icons/icons8-linkedin-circled-50.png" alt="linkedin" />
+        <a href={teamMember.linkedin} >
+          <img src="/icons/icons8-linkedin-circled-50.png" alt="linkedin" style={styleIcon}/>
         </a>
       </div>
     </div>
@@ -36,6 +36,8 @@ const styleImg = {
 
 const styleIcon = {
   fontSize: "3rem",
+  height: "50px",
+  width: "50px",
   justifyContent: "space",
 };
 
