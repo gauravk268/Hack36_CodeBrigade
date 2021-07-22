@@ -9,7 +9,7 @@
 
 ## Introduction:
 
-CONTACTLESS IS THE NEW COMFORT: HOW TOUCHLESS TECHNOLOGY KEEPS RESTAURANT BRANDS CONNECTED TO CUSTOMERS. SO THE PROBLEM IS THAT WE HAVE TO PROVIDE CONTACTLESS SERVICE SO THAT THE SAFETY OF THE CUSTOMERS AS WELL AS Of STAFF IS ENSURED.
+Contactless is the new comfort: How touchless technology keeps restaurant brands connected to customers. So the problem is that we have to provide contactless service so that the safety of the customers as well as of staff is ensured.
 
 ## Flow Chart of the Web-App
 
@@ -17,12 +17,12 @@ CONTACTLESS IS THE NEW COMFORT: HOW TOUCHLESS TECHNOLOGY KEEPS RESTAURANT BRANDS
 
 ## Table of Contents:
 
-1.TO PROVIDE ALL SERVICES IN A RESTAURANT WITH MINIMUM CONTACT.<br>
-2.USER CAN ORDER FOOD IN RESTAURANT USING HIS OWN MOBILE, WITHOUT COMING IN CONTACT OF ANY STAFF.<br>
-3.HE/SHE CAN CHOOSE FOODs FROM THE FOOD MENU ONLY AFTER SCANNING QR CODE ON HIS TABLE WHICH IS UNIQUE FOR EACH TABLE.<br>
-4.PAYMENT INTEGRATION IS DONE WITH THE HELP OF PAYPAL.<br>
-5.MENU IS VISIBLE TO THE USER AFTER HE/SHE SCANS THE UNIQUE QR CODE ON HIS TABLE.<br>
-6.FOR THE PERIOD FOOD IS PREAPARING, ONE HAS OPTION TO CHECK ON NEWS OR PLAY GAMES ON HIS MOBILE PROVIDED IN THE WEB-APP.<br>
+1. To provide all services in a restaurant with minimum contact.
+2. User can order food in restaurant using his own mobile, without coming in contact of any staff.
+3. He/she can choose foods from the food menu only after scanning qr code on his table which is unique for each table.
+4. Payment integration is done with the help of paypal.
+5. Menu is visible to the user after he/she scans the unique qr code on his table.
+6. For the period food is preparing, one has option to check on news or play games on his mobile provided in the web-app.<br>
 
 ## Site Demo
 
@@ -31,13 +31,13 @@ CONTACTLESS IS THE NEW COMFORT: HOW TOUCHLESS TECHNOLOGY KEEPS RESTAURANT BRANDS
 
 ## Technology Stack:
 
-   1.ReactJs<br>
-   2.Node.Js<br>
-   3.Bootstrap<br>
-   4.Firebase<br>
-   5.Javascript<br>
-   6.HTML<br>
-   7.CSS<br>
+   1. ReactJs<br>
+   2. Node.Js<br>
+   3. Bootstrap<br>
+   4. Firebase<br>
+   5. Javascript<br>
+   6. HTML<br>
+   7. CSS<br>
    
 ## Contributors:
 
