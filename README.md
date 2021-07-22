@@ -2,7 +2,7 @@
 <p align="center">
 </p>
 
-## hosted at: http://bit.ly/h36cbs & http://code-brigade.co
+## hosted at: [http://bit.ly/h36cbs](http://bit.ly/h36cbs "bit.ly URL") & [http://code-brigade.co](http://code-brigade.co "Main URL")
 ### Remark : Made specifically for mobiles and tablets devices
 
 <a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a>
