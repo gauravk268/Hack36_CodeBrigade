@@ -26,6 +26,8 @@ Contactless is the new comfort: How touchless technology keeps restaurant brands
 
 ## Site Demo
 
+### Watch full video demo on [Youtube](https://www.youtube.com/watch?v=zw0m5p7aqEY)
+
 <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo1.png" width="280" alt="demo-1"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo2.png" width="280" alt="demo-2"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo3.png" width="280" alt="demo-3"> &nbsp;
 <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo4.png" width="280" alt="demo-4"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo5.png" width="280" alt="demo-5"> &nbsp; <img src="https://gauravk268.github.io/Hack36_CodeBrigade/demoImages/demo6.png" width="280" alt="demo-6"> &nbsp;
 
