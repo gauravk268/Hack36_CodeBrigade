@@ -24,6 +24,17 @@ const team = [
   },
   {
     id: ".03",
+    first_name: "Gaurav",
+    last_name: "Kumar Singh",
+    branch: "ECE",
+    year: "3rd Year",
+    image: "/assets/images/mem-gsingh.jpg",
+    facebook: "https://www.facebook.com/gauravmp07/",
+    github: "https://github.com/gauravks99/",
+    linkedin: "https://www.linkedin.com/in/gauravks99/",
+  },
+  {
+    id: ".04",
     first_name: "Mayank",
     last_name: "Sengar",
     branch: "ECE",
@@ -34,7 +45,7 @@ const team = [
     linkedin: "https://www.linkedin.com/in/mayank-sengar/",
   },
   {
-    id: ".04",
+    id: ".05",
     first_name: "Vinay",
     last_name: "Sharma",
     branch: "ECE",
